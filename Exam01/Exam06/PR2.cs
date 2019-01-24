@@ -21,14 +21,14 @@ namespace Exam06
 
         private void IsiArray(int n)
         {
-            int angka = 18;
-            int deret = 18;
+            int angka = JmlhKolom-1;
+            int deret = JmlhKolom-1;
             for (int bgn = 0; bgn < n; bgn++)
             {
                 int stBrs = bgn;
                 int enBrs = n + 1;
-                int stKlm = (bgn * 6) - (bgn * (bgn - 1) / 2);
-                int enKlm = stKlm + 5 - bgn;
+                int stKlm = (bgn * (3+n-1)) - (bgn * (bgn - 1) / 2);
+                int enKlm = stKlm + n+1 - bgn;
                 for (int b = stBrs; b <= enBrs; b++)
                 {
                     angka = deret;
@@ -36,7 +36,7 @@ namespace Exam06
                     {
                         if (b+k==stKlm+enBrs||b==stBrs||k==stKlm)
                         {
-                            Array2D[b, k] = angka.ToString();
+                                Array2D[b, k] = angka.ToString();
                         }
                         angka--;
                     }
