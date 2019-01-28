@@ -29,5 +29,6 @@ WHERE Nama_Mahasiswa LIKE '%Budi%'
 
 select *from tampil
 
+
 select * from mahasiswa m
 left join nilai n on m.kode_mahasiswa=n.kode_mahasiswa
